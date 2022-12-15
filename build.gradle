@@ -1,0 +1,12 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    implementation (group: 'io.netty', name: 'netty-transport-native-epoll', version: '4.1.86.Final', classifier: 'linux-x86_64', ext: 'jar')
+}
